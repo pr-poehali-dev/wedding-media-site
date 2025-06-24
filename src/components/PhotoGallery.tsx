@@ -12,43 +12,55 @@ interface Photo {
 const PhotoGallery = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
-  // Placeholder wedding photos from Unsplash
+  // Реальные свадебные фото Павла и Анастасии из Яндекс.Диска
   const photos: Photo[] = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop",
-      alt: "Свадебная церемония",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F1.jpg&name=1.jpg&nosw=1",
+      alt: "Свадебная церемония Павла и Анастасии",
       title: "Церемония",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=800&h=600&fit=crop",
-      alt: "Букет невесты",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F2.jpg&name=2.jpg&nosw=1",
+      alt: "Букет невесты Анастасии",
       title: "Букет невесты",
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&h=600&fit=crop",
-      alt: "Свадебные кольца",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F3.jpg&name=3.jpg&nosw=1",
+      alt: "Свадебные кольца Павла и Анастасии",
       title: "Обручальные кольца",
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop",
-      alt: "Первый танец",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F4.jpg&name=4.jpg&nosw=1",
+      alt: "Первый танец молодоженов",
       title: "Первый танец",
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=800&h=600&fit=crop",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F5.jpg&name=5.jpg&nosw=1",
       alt: "Свадебный торт",
       title: "Торт",
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&h=600&fit=crop",
-      alt: "Поцелуй молодоженов",
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F6.jpg&name=6.jpg&nosw=1",
+      alt: "Поцелуй молодоженов Павла и Анастасии",
       title: "Поцелуй",
+    },
+    {
+      id: 7,
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F7.jpg&name=7.jpg&nosw=1",
+      alt: "Свадебная прогулка",
+      title: "Прогулка",
+    },
+    {
+      id: 8,
+      src: "https://downloader.disk.yandex.ru/preview?url=ya-disk-public%3A%2F%2Fe_xL4bv-vYTsPQ%3A%2F8.jpg&name=8.jpg&nosw=1",
+      alt: "Гости на свадьбе",
+      title: "С гостями",
     },
   ];
 
